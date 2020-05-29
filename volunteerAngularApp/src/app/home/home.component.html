@@ -1,0 +1,15 @@
+<div class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3 col-lg-8 offset-lg-0">
+        <h1>Strona główna</h1>
+        <p>
+          Rola: <strong>{{currentUser.role}}</strong>
+        </p>
+        <p>
+          Użytkownik: <strong *ngIf="userFromApi">{{userFromApi.firstName}} {{userFromApi.lastName}}</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
